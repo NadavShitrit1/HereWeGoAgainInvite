@@ -23,14 +23,17 @@
             }
         }
 
-        /* סגנון לתמונה שמסתובבת */
         .rotate-image {
             animation: rotate 5s linear infinite;
+        }
+
+        .paused {
+            animation-play-state: paused;
         }
     </style>
 </head>
 
-<img class="rotate-image" src="images/HERE WE GO AGAIN.png" style="width: 181vw;    height: 104vh;    margin-left: -39vw;" alt="MyPhoto" />
+<img class="rotate-image" src="images/HERE WE GO AGAIN.png" style="width: 181vw;    height: 104vh;    margin-left: -39vw;" id="rotateImage" alt="MyPhoto" />
 <div style="
     text-align: center;
     font-size: 4rem;
@@ -50,4 +53,12 @@
     text-align: center;
     margin-top: 24px;
 " class="fa-copyrights">© all rights to NadavShitritHamelech1</div>
+
+	    <script>
+        const image = document.getElementById('rotateImage');
+
+        image.addEventListener('touchstart', () => {
+            image.classList.toggle('paused');
+        });
+    </script>
 </html>
