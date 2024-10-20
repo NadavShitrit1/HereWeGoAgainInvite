@@ -7,16 +7,56 @@ body {
     
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+
+    /* קונטיינר לתמונה */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-  img{
-        width: 200%;
-        height: 131%;
-        margin: -39% 0vh 0vh -50%;
+/* אנימציה של סיבוב */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
     }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
-.MyPhoto{
-    width: 200%;
-    height: 131%;
-    margin: -39% 0vh 0vh -50%;
+/* סגנון לתמונה שמסתובבת */
+.rotate-image {
+    width: 200px;
+    height: 200px;
+    animation: rotate 5s linear infinite;
+}
+
+}
+
+
+/* קונטיינר לתמונה */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* אנימציה של סיבוב */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* סגנון לתמונה שמסתובבת */
+.rotate-image {
+    width: 200px;
+    height: 200px;
+    animation: rotate 5s linear infinite;
 }
