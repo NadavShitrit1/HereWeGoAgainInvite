@@ -84,13 +84,15 @@ $text: #74808a;
     ----------------------------
 */
 
-.MyPhoto{
-    width: 200%;
-    height: 131%;
-    margin: -39% 0vh 0vh -50%;
-}
+
 
 body {
+    .MyPhoto{
+        width: 200%;
+        height: 131%;
+        margin: -39% 0vh 0vh -50%;
+    }
+    
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 
