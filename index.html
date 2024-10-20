@@ -22,7 +22,21 @@
                 transform: rotate(360deg);
             }
         }
-
+	   @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+		
+	.bounce-text {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            animation: bounce 2s infinite;
+        }
         .rotate-image {
             animation: rotate 5s linear infinite;
         }
@@ -33,8 +47,8 @@
     </style>
 </head>
 
-<img class="rotate-image" src="images/photo.png" style="width: 146vw;    height: 87vh;    margin-left: -22vw;" id="rotateImage" alt="MyPhoto" />
-<div style="
+<img class="rotate-image" src="images/photo.png" style="width: 100%;    height: 100%" id="rotateImage" alt="MyPhoto" />
+<div class="bounce-text" style="
     text-align: center;
     font-size: 4rem;
     font-family: sans-serif;
